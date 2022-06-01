@@ -1,0 +1,17 @@
+/home/senrique/Desenvolvimento/dotnet/RedditWall/bin/Debug/net6.0/RedditWall
+/home/senrique/Desenvolvimento/dotnet/RedditWall/bin/Debug/net6.0/RedditWall.deps.json
+/home/senrique/Desenvolvimento/dotnet/RedditWall/bin/Debug/net6.0/RedditWall.runtimeconfig.json
+/home/senrique/Desenvolvimento/dotnet/RedditWall/bin/Debug/net6.0/RedditWall.dll
+/home/senrique/Desenvolvimento/dotnet/RedditWall/bin/Debug/net6.0/ref/RedditWall.dll
+/home/senrique/Desenvolvimento/dotnet/RedditWall/bin/Debug/net6.0/RedditWall.pdb
+/home/senrique/Desenvolvimento/dotnet/RedditWall/bin/Debug/net6.0/RestSharp.dll
+/home/senrique/Desenvolvimento/dotnet/RedditWall/obj/Debug/net6.0/RedditWall.csproj.AssemblyReference.cache
+/home/senrique/Desenvolvimento/dotnet/RedditWall/obj/Debug/net6.0/RedditWall.GeneratedMSBuildEditorConfig.editorconfig
+/home/senrique/Desenvolvimento/dotnet/RedditWall/obj/Debug/net6.0/RedditWall.AssemblyInfoInputs.cache
+/home/senrique/Desenvolvimento/dotnet/RedditWall/obj/Debug/net6.0/RedditWall.AssemblyInfo.cs
+/home/senrique/Desenvolvimento/dotnet/RedditWall/obj/Debug/net6.0/RedditWall.csproj.CoreCompileInputs.cache
+/home/senrique/Desenvolvimento/dotnet/RedditWall/obj/Debug/net6.0/RedditWall.csproj.CopyComplete
+/home/senrique/Desenvolvimento/dotnet/RedditWall/obj/Debug/net6.0/RedditWall.dll
+/home/senrique/Desenvolvimento/dotnet/RedditWall/obj/Debug/net6.0/ref/RedditWall.dll
+/home/senrique/Desenvolvimento/dotnet/RedditWall/obj/Debug/net6.0/RedditWall.pdb
+/home/senrique/Desenvolvimento/dotnet/RedditWall/obj/Debug/net6.0/RedditWall.genruntimeconfig.cache
