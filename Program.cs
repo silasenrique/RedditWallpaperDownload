@@ -1,6 +1,3 @@
-﻿// await RedditWall.Reddit.GetFavorites();
+﻿using RedditWall;
 
-using System.Text.Json;
-using RedditWall;
-
-var hml = JsonSerializer.Deserialize<Favorites>(File.ReadAllText("./json.json"));
+await Wallpaper.Download();

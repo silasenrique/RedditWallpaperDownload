@@ -7,6 +7,11 @@ public record Favorites
 {
     [JsonPropertyName("data")]
     public Data? Data { get; set; }
+
+    public Favorites(Data data)
+    {
+        Data = data;
+    }
 }
 
 public record Data
@@ -19,6 +24,11 @@ public record Data
 
     [JsonPropertyName("children")]
     public List<Children>? Children { get; set; }
+
+    public Data(List<Children> children)
+    {
+        Children = children;
+    }
 }
 
 public record Children
@@ -37,4 +47,20 @@ public record ChildrenData
 
     [JsonPropertyName("url_overridden_by_dest")]
     public string? UrlOverriddenByDest { get; set; }
+
+    [JsonPropertyName("gallery_data")]
+    public GalleryItems? GalleryItems { get; set; }
+}
+
+public record GalleryItems
+{
+    [JsonPropertyName("items")]
+    public List<Items>? Items { get; set; }
+}
+
+public record Items
+{
+
+    [JsonPropertyName("id")]
+    public int Id { get; set; }
 }

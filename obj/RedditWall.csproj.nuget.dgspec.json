@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\silas.enrique\\Desenvolvimento\\RedditWallpaperDownload\\RedditWall.csproj": {}
+    "/home/senrique/Desenvolvimento/dotnet/RedditWall/RedditWall.csproj": {}
   },
   "projects": {
-    "C:\\Users\\silas.enrique\\Desenvolvimento\\RedditWallpaperDownload\\RedditWall.csproj": {
+    "/home/senrique/Desenvolvimento/dotnet/RedditWall/RedditWall.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\silas.enrique\\Desenvolvimento\\RedditWallpaperDownload\\RedditWall.csproj",
+        "projectUniqueName": "/home/senrique/Desenvolvimento/dotnet/RedditWall/RedditWall.csproj",
         "projectName": "RedditWall",
-        "projectPath": "C:\\Users\\silas.enrique\\Desenvolvimento\\RedditWallpaperDownload\\RedditWall.csproj",
-        "packagesPath": "C:\\Users\\silas.enrique\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\silas.enrique\\Desenvolvimento\\RedditWallpaperDownload\\obj\\",
+        "projectPath": "/home/senrique/Desenvolvimento/dotnet/RedditWall/RedditWall.csproj",
+        "packagesPath": "/home/senrique/.nuget/packages/",
+        "outputPath": "/home/senrique/Desenvolvimento/dotnet/RedditWall/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\silas.enrique\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/senrique/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/senrique/.dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

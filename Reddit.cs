@@ -17,7 +17,7 @@ public static class Reddit
         Environment.Exit(0);
     }
 
-    public static async Task<RedditToken?> GetToken()
+    static async Task<RedditToken?> GetToken()
     {
         var client = new RestClient("https://www.reddit.com/api/v1/access_token")
         {
@@ -46,7 +46,7 @@ public static class Reddit
         return JsonSerializer.Deserialize<RedditToken>(response.Content!);
     }
 
-    public static async Task GetFavorites()
+    private static async Task<Favorites> RequestFavorites(string after)
     {
         var token = await GetToken();
 
@@ -56,11 +56,28 @@ public static class Reddit
         }
 
         var client = new RestClient("https://oauth.reddit.com");
-        var request = new RestRequest("/user/SilasEnrique/saved?limit=2");
+        var request = new RestRequest($"/user/SilasEnrique/saved?limit=100&after={after}");
         request.AddHeader("Authorization", $"bearer {token!.AccessToken}");
         request.AddHeader("User-Agent", "wallpaper-download by SilasEnrique");
 
-        var content = await client.GetAsync(request);
-        System.Console.WriteLine(content.Content);
+        var response = await client.GetAsync(request);
+
+        return JsonSerializer.Deserialize<Favorites>(response.Content!)!; ;
+    }
+
+    public static async Task<Favorites> GetFavorites()
+    {
+        var favorites = new Favorites(
+            new Data(new List<Children>())
+        );
+
+        do
+        {
+            var getFavorites = await RequestFavorites(favorites.Data!.After!);
+            favorites.Data!.Children!.AddRange(getFavorites.Data!.Children!);
+            favorites.Data.After = getFavorites.Data.After;
+        } while (favorites.Data.After != null);
+
+        return favorites;
     }
 }
